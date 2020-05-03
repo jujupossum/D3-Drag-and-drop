@@ -9,30 +9,47 @@
 			}
 			
 			body{
-				background-color:#fafafa;
+				background-color:#fcfcfc;
 				padding:2% 10%;
 				font-family:testfont;
 			}
 			
 			.content{
+				border-radius:2px;
 				padding:1% 5%;
 				background-color:white;
 				border:solid 1px #e6e6e6;
 				height:100%;
 			}
+			
+			line{
+				color:grey;
+			}
+			
+			rect{
+				border:solid 1px grey;
+			}
 		</style>
-		<script src="https://d3js.org/d3.v5.min.js"></script>
-		<script src="drag.js"></script>
+			<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+			<script src="https://d3js.org/d3-polygon.v1.min.js"></script>
+			<!-- D3 drag and drop js libs -->
+			<script src = "https://d3js.org/d3-dispatch.v1.min.js"></script>
+			<script src = "https://d3js.org/d3-drag.v1.min.js"></script>
+		
 	</head>
 <body>
 	<div class="content">
 		<h1>D3 Drag and Drop</h1>
-		<p>This is a paragraph.</p>
-		<div id='mesh'>
+		<p>Click and drag polygons</p>
+		
+		<div id="mesh">
+			
 		</div>
 		
 	</div>
 
-
+	
+	
+<script src="drag.js"></script>
 </body>
 </html>
